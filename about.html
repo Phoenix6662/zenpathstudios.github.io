@@ -5,64 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZenPath Studios</title>
   <style>
-    :root {
-      --primary-color: #004d40;
-      --text-color: #333;
-      --bg-gradient: linear-gradient(to bottom, #e0f2f1, #ffffff);
-    }
-
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg-gradient);
-      color: var(--text-color);
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #2e3b3a;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
 
     header {
-      background-color: var(--primary-color);
-      color: white;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
       padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
     nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
       margin-top: 0.5rem;
     }
 
     nav a {
-      color: white;
+      color: #2e3b3a;
+      margin: 0 12px;
       text-decoration: none;
-      font-weight: bold;
-      padding: 0.5rem;
-      transition: opacity 0.3s;
+      font-weight: 600;
+      transition: opacity 0.2s;
     }
 
     nav a:hover {
-      opacity: 0.8;
+      opacity: 0.75;
     }
 
     main {
       flex-grow: 1;
-      padding: 2rem;
+      padding: 2rem 1rem;
+      max-width: 700px;
+      background-color: transparent;
       text-align: center;
+      color: #2e3b3a;
+      margin: 2rem auto 0 auto;
+    }
+
+    h2 {
+      color: #455a64;
     }
 
     footer {
-      background-color: var(--primary-color);
-      color: white;
+      background-color: #f5f5f7;
+      color: #2e3b3a;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
     }
 
     @media (max-width: 600px) {
       nav {
+        display: flex;
         flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      main {
+        padding: 2rem 1rem 6rem 1rem;
+        margin-top: 2rem;
       }
     }
   </style>
@@ -70,7 +86,7 @@
 <body>
 
   <header>
-    <h1>ZenPath Studios</h1>
+    <h1>ZenPath Studios | About</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="apps.html">Apps</a>
@@ -81,12 +97,12 @@
   </header>
 
   <main>
-    <h2>Welcome to ZenPath Studios</h2>
-    <p>This is a placeholder for the about page content.</p>
+    <h2>About</h2>
+    <p>Placeholder for About</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 ZenPath Studios</p>
+    <p>&copy; 2025 ZenPath Studios. All rights reserved.</p>
   </footer>
 
 </body>
