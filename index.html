@@ -7,40 +7,76 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #e0f2f1, #ffffff);
-      color: #004d40;
-      text-align: center;
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #2e3b3a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
-      background-color: #004d40;
-      color: white;
-      padding: 1.5rem 0;
+      background-color: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
     nav {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
 
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #2e3b3a;
+      margin: 0 12px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    nav a:hover {
+      opacity: 0.75;
     }
 
     main {
-      padding: 2rem;
+      flex-grow: 1;
+      padding: 2rem 1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      backdrop-filter: blur(4px);
+      margin-top: 2rem;
+    }
+
+    h2 {
+      color: #455a64;
     }
 
     footer {
-      background-color: #004d40;
-      color: white;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #2e3b3a;
+      text-align: center;
       padding: 1rem;
-      position: relative;
-      bottom: 0;
-      width: 100%;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -48,14 +84,13 @@
 
   <header>
     <h1>ZenPath Studios</h1>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="apps.html">Apps</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="privacy.html">Privacy Policy</a>
-</nav>
-    
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="apps.html">Apps</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
   </header>
 
   <main>
