@@ -19,8 +19,9 @@
     header {
       background-color: rgba(255, 255, 255, 0.8);
       backdrop-filter: blur(10px);
-      padding: 1rem;
+      padding: 1rem 1.5rem;
       border-bottom: 1px solid #ddd;
+      position: relative;
     }
 
     .header-container {
@@ -28,35 +29,25 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+      position: relative;
     }
 
-    .logo-nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    @media (min-width: 601px) {
-      .logo-nav {
-        align-items: flex-start;
-      }
-    }
-
-    .logo-nav h1 {
+    .header-container h1 {
       margin: 0;
       font-size: 2rem;
       letter-spacing: 1px;
-      text-align: center;
     }
 
     nav {
       margin-top: 0.5rem;
-      text-align: center;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     nav a {
       color: #2e3b3a;
-      margin: 0 12px;
       text-decoration: none;
       font-weight: 600;
       transition: opacity 0.2s;
@@ -67,7 +58,9 @@
     }
 
     .coffee-button {
-      margin-top: 0.5rem;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
     }
 
     main {
@@ -95,7 +88,6 @@
 
     @media (max-width: 600px) {
       nav {
-        display: flex;
         flex-direction: column;
         gap: 0.5rem;
       }
@@ -105,12 +97,8 @@
         margin-top: 2rem;
       }
 
-      .header-container {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .coffee-button {
+        position: static;
         margin-top: 1rem;
       }
     }
@@ -120,16 +108,14 @@
 
   <header>
     <div class="header-container">
-      <div class="logo-nav">
-        <h1>ZenPath Studios</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="apps.html">Apps</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="privacy.html">Privacy Policy</a>
-        </nav>
-      </div>
+      <h1>ZenPath Studios</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
       <div class="coffee-button">
         <script type="text/javascript" 
           src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
