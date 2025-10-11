@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Books & Journals — ZenPath</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Explore ZenPath’s journals, workbooks, poetry, and self-help books." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ZenPath home">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html" class="active">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-title">
+    <div class="container">
+      <h1>Books & Journals</h1>
+      <p>Guided journals, workbooks, poetry, making self-care and growth simple and accessible.</p>
+    </div>
+  </section>
+
+  <!--365 Days Series section-->
+
+  <main class="site-main">
+    <section class="section">
+      <div class="container">
+        <h2>The 365 Series</h2>
+        <div class="grid cards-4">
+          <article class="card">
+            <img src="images/365daysselflove.png" alt="365 Days of Self Love cover" />
+            <div class="card-body">
+              <h3>365 Days of Self Love</h3>
+              <p>A Year of Affirmations and Reflections to Nurture Your Heart and Soul</p>
+              <a class="link" href="#">Amazon</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>365 Days of Inner Peace</h3>
+              <p>Daily calm, clarity, and grounded presence.</p>
+              <a class="link" href="#">Amazon</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>365 Days of Self Transformation</h3>
+              <p>Small steps, profound change.</p>
+              <a class="link" href="#">Amazon</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+<!-- Poetry Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Poetry</h2>
+        <div class="grid cards-4">
+          <article class="card">
+            <img src="images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>Ode to Freya</h3>
+              <p>Poetry for and about the Goddess Freya</p>
+              <a class="link" href="#">Amazon</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Journals Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Journals</h2>
+        <div class="grid cards-4">
+          <article class="card">
+            <img src="images/floraljournal.png" alt="Floral Journal" />
+            <div class="card-body">
+              <h3>Journal</h3>
+              <p>Blank lined floral journal</p>
+              <a class="link" href="#">Amazon</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html" class="active">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
