@@ -2,115 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZenPath Studios</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #2e3b3a;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      color: #2e3b3a;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.2s;
-    }
-
-    nav a:hover {
-      opacity: 0.75;
-    }
-
-    main {
-      flex-grow: 1;
-      padding: 2rem 1rem;
-      max-width: 700px;
-      background-color: transparent;
-      text-align: center;
-      color: #2e3b3a;
-      margin: 2rem auto 0 auto;
-    }
-
-    h2 {
-      color: #455a64;
-    }
-
-    footer {
-      background-color: #f5f5f7;
-      color: #2e3b3a;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      main {
-        padding: 2rem 1rem 6rem 1rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — ZenPath</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Learn about ZenPath’s mission, vision, and the heart behind our healing tools." />
 </head>
 <body>
-
-  <header>
-    <h1>ZenPath Studios | About</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="apps.html">Apps</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ZenPath home">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Our Mission</h2>
-    <p>ZenPath Studios seeks to provide tools, games, and guidance that help bring peace, clarity, and calm in an enjoyable and accessible way.</p>
-    <p>We create apps and games that support mental wellness, emotional regulation, and intentional living — designed for real people with real lives.</p>
+  <!-- Page Title -->
+  <section class="page-title">
+    <div class="container">
+      <h1>The Heart Behind ZenPath</h1>
+      <p>Inspirational, nurturing, and grounded tools for healing and transformation.</p>
+    </div>
+  </section>
 
-    <h2>Who We Are</h2>
-    <p>We’re an indie studio with a background in psychology, passionate about creating meaningful digital experiences. Our tools are built with mindfulness, accessibility, and empowerment at the core.</p>
+  <main class="site-main">
+    <section class="section">
+      <div class="container grid two-col">
+        <div>
+          <h2>Mission</h2>
+          <p>I make personal growth simple, accessible, and deeply nurturing by building an ecosystem of tools and resources for healing, self-discovery, and transformation.</p>
+          <h2>Vision</h2>
+          <p>To help millions heal and transform their lives.</p>
+          <h2>Values</h2>
+          <ul class="list">
+            <li>Healing & Compassion</li>
+            <li>Practical Self-Help</li>
+            <li>Spiritual Growth</li>
+            <li>Transformation</li>
+          </ul>
+        </div>
+        <aside>
+          <img src="images/journals.png" alt="Journals and tea on a cozy table" class="rounded" />
+        </aside>
+      </div>
+    </section>
 
-    <h2>Why It Matters</h2>
-    <p>Whether you're managing stress, building healthy habits, or just looking for a little peace in your day — we're here for that. One small mindful step at a time.</p>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ZenPath Studios. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
+    </div>
   </footer>
-
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
