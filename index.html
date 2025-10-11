@@ -1,187 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZenPath Studios</title>
 
   <!-- ✅ SEO Tags -->
   <meta name="description" content="ZenPath Studios creates relaxing wellness tools, mental health apps, and mindful games blending psychology and creativity.">
   <meta name="keywords" content="mental health, wellness apps, mindfulness, journal apps, dbt, DBT, self help, indie games, psychology, relaxation, ZenPath Studios">
   <meta name="author" content="ZenPath Studios">
 
-  <!-- ✅ Open Graph (for social sharing) -->
-  <meta property="og:title" content="ZenPath Studios" />
-  <meta property="og:description" content="Mindful tools for a digital world — wellness apps and relaxing games." />
-  <meta property="og:image" content="https://yourdomain.com/images/og-preview.jpg" />
-  <meta property="og:url" content="https://yourdomain.com" />
-  <meta property="og:type" content="website" />
 
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #2e3b3a;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 1rem 1.5rem;
-      border-bottom: 1px solid #ddd;
-      position: relative;
-    }
-
-
-    .header-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      position: relative;
-    }
-
-    .header-container h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    nav a {
-      color: #2e3b3a;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.2s;
-      font-size: 1rem;
-    }
-
-    nav a:hover {
-      opacity: 0.75;
-    }
-
-    .coffee-button {
-      position: absolute;
-      top: 1rem;
-      right: 1.5rem;
-      transform: scale(1);
-      transform-origin: top right;
-      transition: transform 0.3s ease;
-    }
-
-    main {
-      flex-grow: 1;
-      padding: 2rem 1rem;
-      max-width: 700px;
-      background-color: transparent;
-      text-align: center;
-      color: #2e3b3a;
-      margin: 2rem auto 0 auto;
-    }
-
-    h2 {
-      color: #455a64;
-    }
-
-    footer {
-      background-color: #f5f5f7;
-      color: #2e3b3a;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-    }
-
-    /* -------- Responsive Tweaks -------- */
-    @media (max-width: 768px) {
-      .header-container h1 {
-        font-size: 1.6rem;
-      }
-
-      nav a {
-        font-size: 0.95rem;
-      }
-
-      .coffee-button {
-        transform: scale(0.85);
-        right: 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .header-container h1 {
-        font-size: 1.4rem;
-      }
-
-      nav {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 0.75rem;
-      }
-
-      .coffee-button {
-        position: static;
-        margin-top: 1rem;
-        transform: scale(0.9);
-      }
-
-      main {
-        padding: 2rem 1rem 5rem 1rem;
-      }
-    }
-  </style>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ZenPath — Simple, Nurturing Tools for Growth</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Journals, workbooks, books, and apps for healing, self-discovery, and transformation." />
 </head>
 <body>
-
-  <header>
-    <div class="header-container">
-      <h1>ZenPath Studios</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="apps.html">Apps</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ZenPath home">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <div class="coffee-button">
-        <script type="text/javascript" 
-          src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
-          data-name="bmc-button" 
-          data-slug="ZenPath" 
-          data-color="#40DCA5" 
-          data-emoji="❤️"  
-          data-font="Bree" 
-          data-text="Support the creator" 
-          data-outline-color="#000000" 
-          data-font-color="#ffffff" 
-          data-coffee-color="#FFDD00">
-        </script>
-      </div>
     </div>
   </header>
 
-  <main>
-    <h2>Mindful Tools for a Digital World</h2>
-    <p>ZenPath Studios is an indie creative studio blending psychology and play. We build mindful tools, relaxing games, and wellness experiences that meet people where they are.</p>
-    <p>Our mission is to make mental wellness accessible, engaging, and empowering through creative digital tools anyone can use.</p>
+  <!-- Hero (Home only) -->
+  <section class="hero">
+    <div class="hero-media">
+      
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <h1>Come Grow With Us</h1>
+      <p>Tools and resources to help you heal, grow, and transform - one simple step at a time.</p>
+      <div class="hero-actions">
+        <a class="btn" href="books.html">Explore Books</a>
+        <a class="btn btn-secondary" href="apps.html">See Apps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Sections -->
+  <main class="site-main">
+    <section class="section">
+      <div class="container">
+        <h2>Featured Books</h2>
+        <div class="grid cards-3">
+          <article class="card">
+            <img src="images/365daysselflove.png" alt="365 days of self love" />
+            <div class="card-body">
+              <h3>365 Days of Self Love</h3>
+              <p>A Year of Affirmations and Reflections to Nurture Your Heart and Soul</p>
+              <a class="link" href="books.html">View details</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>90 Days Feminine Power Transformation</h3>
+              <p>A guided transformation journey to reclaim your inner feminine radiance.</p>
+              <a class="link" href="books.html">View details</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>365 Days of Inner Peace</h3>
+              <p>Gentle prompts and practices for calm and clarity.</p>
+              <a class="link" href="books.html">View details</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Mindful Apps</h2>
+        <div class="grid cards-3">
+          <article class="card">
+            <img src="./images/mindkit.png" alt="MindKit app" />
+            <div class="card-body">
+              <h3>MindKit</h3>
+              <p>Daily wellness tools, affirmations, and guided practices.</p>
+              <a class="link" href="https://play.google.com/store/search?q=mindkit&c=apps&hl=en_US">Get it on Google Play</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>Habit Tracker</h3>
+              <p>Simple and fun habbit tracker app.</p>
+              <a class="link" href="apps.html">Coming Soon</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="./images/comingsoon.png" alt="Coming Soon" />
+            <div class="card-body">
+              <h3>Simple DBT</h3>
+              <p>Simple DBT learning app with flip cards</p>
+              <a class="link" href="apps.html">Coming Soon</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ZenPath Studios. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script>
+    // Simple current year for footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
