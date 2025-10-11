@@ -2,153 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZenPath Studios</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #2e3b3a;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      color: #2e3b3a;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.2s;
-    }
-
-    nav a:hover {
-      opacity: 0.75;
-    }
-
-    main {
-      flex-grow: 1;
-      padding: 2rem 1rem;
-      max-width: 700px;
-      background-color: transparent;
-      color: #2e3b3a;
-      margin: 2rem auto 0 auto;
-      text-align: left;
-    }
-
-    h2 {
-      color: #455a64;
-      text-align: center;
-    }
-
-    footer {
-      background-color: #f5f5f7;
-      color: #2e3b3a;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      main {
-        padding: 2rem 1rem 6rem 1rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — ZenPath</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="robots" content="noindex" />
 </head>
 <body>
-
-  <header>
-    <h1>ZenPath Studios | Privacy</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="apps.html">Apps</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ZenPath home">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>MindKit App – Privacy Policy</h2>
-    <p><strong>Effective Date:</strong> July 2025</p>
-    <p>At ZenPath Studios, your privacy is a priority. MindKit is designed as a personal wellness tool that gives users full control over their data. Below is a clear explanation of what we collect, how it’s used, and how you remain in control.</p>
+  <section class="page-title">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p>How we collect, use, and protect your information.</p>
+    </div>
+  </section>
 
-    <h3>1. Account Login & User Data</h3>
-    <p>MindKit offers optional account creation using a valid email address. This allows you to:</p>
-    <ul>
-      <li>Sync and back up your wellness data across devices</li>
-      <li>Restore your data if the app is deleted or your device is changed</li>
-    </ul>
-    <p>When you create an account, we collect:</p>
-    <ul>
-      <li>Your email address (for authentication and sync)</li>
-      <li>Journal entries, wellness logs, custom prompts, and app preferences you choose to save</li>
-    </ul>
-    <p>This data is securely stored in <strong>Google Firebase</strong>, a trusted cloud service. We do not access or share your data outside of providing sync functionality.</p>
+  <main class="site-main">
+    <section class="section">
+      <div class="container prose">
+        <h2>Overview</h2>
+        <p>This Privacy Policy describes how ZenPath (“we,” “us,” or “our”) collects, uses, and shares information when you use our website, apps, and services.</p>
 
-    <h3>2. Local-Only Use (No Account)</h3>
-    <p>If you use MindKit without logging in:</p>
-    <ul>
-      <li>All your data remains <strong>local to your device</strong></li>
-      <li>No journal entries, stats, or prompts leave your device</li>
-      <li>Deleting the app deletes all locally stored data</li>
-    </ul>
+        <h2>Information We Collect</h2>
+        <ul>
+          <li>Contact details you provide (e.g., name, email) when you reach out or subscribe.</li>
+          <li>Usage data (e.g., pages visited) to improve our site and services.</li>
+        </ul>
 
-    <h3>3. Ads and Third-Party Tools</h3>
-    <p>MindKit uses <strong>Google AdMob</strong> to display banner ads in the free version of the app. AdMob may collect non-personal data such as:</p>
-    <ul>
-      <li>Device type, OS, and language</li>
-      <li>Advertising ID</li>
-      <li>Interaction with ads</li>
-    </ul>
-    <p>We do <strong>not</strong> collect or store this data, and it is governed by <a href="https://policies.google.com/privacy" target="_blank">Google’s Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob policies</a>.</p>
+        <h2>How We Use Information</h2>
+        <ul>
+          <li>To respond to inquiries and provide customer support.</li>
+          <li>To improve the website, apps, and user experience.</li>
+          <li>To send optional updates or newsletters (with your consent).</li>
+        </ul>
 
-    <h3>4. Children’s Privacy</h3>
-    <p>MindKit is not intended for users under the age of 13. We do not knowingly collect or solicit personal information from children. If you believe a child under 13 has used the app with an account, please contact us so we can take appropriate action.</p>
+        <h2>Sharing</h2>
+        <p>We don’t sell your personal information. We may share limited data with service providers (e.g., email or form processing) to operate our services.</p>
 
-    <h3>5. Your Rights & Data Deletion</h3>
-    <p>You have full control over your data. You can:</p>
-    <ul>
-      <li>Use the app without ever signing in</li>
-      <li>Delete your account and all synced data by contacting us at https://zenpathstudios.com/contact.html</a></li>
-    </ul>
+        <h2>Security</h2>
+        <p>We use reasonable safeguards to protect your information. However, no method of transmission or storage is 100% secure.</p>
 
-    <h3>6. Changes to This Policy</h3>
-    <p>This policy may be updated as features change. We will post the latest version within the app and/or on our website. Continued use of MindKit after any update indicates your acceptance of the revised policy.</p>
+        <h2>Your Choices</h2>
+        <ul>
+          <li>You may request access, updates, or deletion of your data by contacting us.</li>
+          <li>You may unsubscribe from emails at any time using the link provided.</li>
+        </ul>
+
+        <h2>Children</h2>
+        <p>Our site and services aren’t directed to children under 13. We don’t knowingly collect data from children.</p>
+
+        <h2>Changes</h2>
+        <p>We may update this Policy from time to time. The revised date will be noted below.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions, contact us at <a href="mailto:hello@zenpathstudios.com">hello@zenpathstudios.com</a>.</p>
+
+        <p class="muted">Last updated: <time datetime="2025-10-11">October 11, 2025</time></p>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 ZenPath Studios. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
+    </div>
   </footer>
-
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
