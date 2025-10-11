@@ -2,122 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZenPath Studios</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background: url('background.png') no-repeat center center fixed;
-      background-size: cover;
-      color: #2e3b3a;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(10px);
-      padding: 1rem;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      color: #2e3b3a;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: opacity 0.2s;
-    }
-
-    nav a:hover {
-      opacity: 0.75;
-    }
-
-    main {
-      flex-grow: 1;
-      padding: 2rem 1rem;
-      max-width: 700px;
-      background-color: transparent;
-      text-align: center;
-      color: #2e3b3a;
-      margin: 2rem auto 0 auto;
-    }
-
-    h2 {
-      color: #455a64;
-    }
-
-    footer {
-      background-color: #f5f5f7;
-      color: #2e3b3a;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      border-top: 1px solid #ccc;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-
-      main {
-        padding: 2rem 1rem 6rem 1rem;
-        margin-top: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — ZenPath</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Contact ZenPath with questions, partnerships, and media inquiries." />
 </head>
 <body>
-
-  <header>
-    <h1>ZenPath Studios | Contact</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="apps.html">Apps</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ZenPath home">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-<main>
-  <h2>Contact Us</h2>
-  <p>If you have any concerns or feedback we would love to hear from you! Use the form below to send us a message.</p>
+  <section class="page-title">
+    <div class="container">
+      <h1>Contact</h1>
+      <p>We’d love to hear from you. Kindly allow 2–3 days for replies.</p>
+    </div>
+  </section>
 
-  <div style="overflow: hidden; max-width: 100%;">
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSebbKoNc2yT1evscGpwyp0Ta8hJ0uABrf5z2VtwuMQRscg0UQ/viewform?embedded=true" 
-      width="100%" 
-      height="900" 
-      frameborder="0" 
-      marginheight="0" 
-      marginwidth="0" 
-      style="border: none;">
-      Loading…
-    </iframe>
+  <main class="site-main">
+    <section class="section">
+      <div class="container grid two-col">
+        <form class="contact-form" action="https://formspree.io/f/mrbyyvoz" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <button class="btn" type="submit">Send</button>
+          <p class="form-note">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+        </form>
+
+        <!-- contact links-->  
+        <aside class="contact-side">
+          <img class="rounded" src="./images/logo.png" alt="logo" style="width: 50%; height: auto; max-width: 200px;" />
+          <div class="stack">
+            <h3>Email</h3>
+            <p><a href="mailto:zenpathstudios@gmail.com">Zenpathstudios@gmail.com</a></p>
+            <h3>Social</h3>
+            <p><a href="https://www.instagram.com/zenpath666">Instagram</a></p>
+            <h3>Patreon</h3>
+            <p><a href= "https://www.patreon.com/zenpathstudios?utm_campaign=creatorshare_creator">Patreon</a></p>
+          </div>
+    <!-- buy me a coffee button -->      
+<section class="support-section">
+  <div class="container" style="text-align:center-left; margin-top:2rem;">
+    <p>If ZenPath has helped you</br> and you'd like to support my work,</br> you can do so here:</p>
+    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+    data-name="bmc-button" 
+    data-slug="ZenPath" 
+    data-color="#BD5FFF" 
+    data-emoji="💜" 
+    data-font="Cookie" 
+    data-text="Support" 
+    data-outline-color="#000000" 
+    data-font-color="#ffffff" 
+    data-coffee-color="#FFDD00">
+    </script>
   </div>
-</main>
+</section>
+
+        </aside>
+      </div>
+    </section>
+  </main>
 
 
-  <footer>
-    <p>&copy; 2025 ZenPath Studios. All rights reserved.</p>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
+        <span class="brand-text">ZenPath</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="apps.html">Apps</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
+    </div>
+
   </footer>
-
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
