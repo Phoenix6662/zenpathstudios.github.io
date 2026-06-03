@@ -1,111 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — ZenPath</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Contact ZenPath with questions, partnerships, and media inquiries." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact ZenPath Studios for support, feedback, or collaboration inquiries.">
+  <title>ZenPath Studios | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="ZenPath home">
-        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
-        <span class="brand-text">ZenPath</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="apps.html">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body data-page="contact" data-base=".">
+  <div data-site-header></div>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>Contact</h1>
-      <p>We’d love to hear from you. Kindly allow 2–3 days for replies.</p>
-    </div>
-  </section>
+  <main id="main-content">
+    <section class="subhero">
+      <div class="container subhero__content fade-in-up">
+        <p class="eyebrow">Contact</p>
+        <h1>Reach out to ZenPath Studios</h1>
+        <p>Use this page for support questions, feedback, collaboration inquiries, or anything else you want to share.</p>
+      </div>
+    </section>
 
-  <main class="site-main">
     <section class="section">
-      <div class="container grid two-col">
-        <form class="contact-form" action="https://formspree.io/f/mrbyyvoz" method="POST">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
+      <div class="container contact-layout">
+        <article class="card contact-card">
+          <p class="eyebrow">Contact Form</p>
+          <h2>Send a message</h2>
+          <p>If you need support, have a question, want to share feedback, or are interested in collaborating, we’d love to hear from you.</p>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
+          <form class="contact-form" action="https://formspree.io/f/mrbyyvoz" method="POST">
+            <label class="form-field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
+            <label class="form-field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
 
-          <button class="btn" type="submit">Send</button>
-          <p class="form-note">By submitting, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
-        </form>
+            <label class="form-field">
+              <span>Topic</span>
+              <select name="topic">
+                <option value="">Choose a topic</option>
+                <option value="general">General question</option>
+                <option value="support">Product support</option>
+                <option value="feedback">Feedback</option>
+                <option value="partnership">Partnership or collaboration</option>
+              </select>
+            </label>
 
-        <!-- contact links-->  
-        <aside class="contact-side">
-          <img class="rounded" src="./images/logo.png" alt="logo" style="width: 50%; height: auto; max-width: 200px;" />
-          <div class="stack">
-            <h3>Email</h3>
-            <p><a href="mailto:zenpathstudios@gmail.com">Zenpathstudios@gmail.com</a></p>
-            <h3>Social</h3>
-            <p><a href="https://www.instagram.com/zenpath666">Instagram</a></p>
-            <h3>Patreon</h3>
-            <p><a href= "https://www.patreon.com/zenpathstudios?utm_campaign=creatorshare_creator">Patreon</a></p>
+            <label class="form-field">
+              <span>Message</span>
+              <textarea name="message" rows="7" placeholder="Write your message here" required></textarea>
+            </label>
+
+            <button class="button button--primary" type="submit">Send Message</button>
+          </form>
+        </article>
+
+        <aside class="card contact-sidecard">
+          <p class="eyebrow">Other Methods</p>
+          <h2>Connect with ZenPath in other places</h2>
+          <div class="contact-note">
+            <p>You can also reach out through social media or by email.</p>
           </div>
-    <!-- buy me a coffee button -->      
-<section class="support-section">
-  <div class="container" style="text-align:center-left; margin-top:2rem;">
-    <p>If ZenPath has helped you</br> and you'd like to support my work,</br> you can do so here:</p>
-    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
-    data-name="bmc-button" 
-    data-slug="ZenPath" 
-    data-color="#BD5FFF" 
-    data-emoji="💜" 
-    data-font="Cookie" 
-    data-text="Support" 
-    data-outline-color="#000000" 
-    data-font-color="#ffffff" 
-    data-coffee-color="#FFDD00">
-    </script>
-  </div>
-</section>
-
+          <div class="contact-links">
+            <!-- Replace the placeholder link below with your TikTok profile URL. -->
+            <a href="#" aria-label="ZenPath Studios TikTok page">TikTok page</a>
+            <!-- Replace the placeholder link below with your YouTube channel URL. -->
+            <a href="#" aria-label="ZenPath Studios YouTube channel">YouTube channel</a>
+            <a href="mailto:zenpathstudios@gmail.com">zenpathstudios@gmail.com</a>
+          </div>
         </aside>
       </div>
     </section>
   </main>
 
-
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
-        <span class="brand-text">ZenPath</span>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="apps.html">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </nav>
-      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
-    </div>
-
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <div data-site-footer></div>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
