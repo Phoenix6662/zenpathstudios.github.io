@@ -1,151 +1,201 @@
-
-  <!-- ✅ SEO Tags -->
-  <meta name="description" content="ZenPath Studios creates relaxing wellness tools, mental health apps, and mindful games blending psychology and creativity.">
-  <meta name="keywords" content="mental health, wellness apps, mindfulness, journal apps, dbt, DBT, self help, indie games, psychology, relaxation, ZenPath Studios">
-  <meta name="author" content="ZenPath Studios">
-
-
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZenPath — Simple, Nurturing Tools for Growth</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Journals, workbooks, books, and apps for healing, self-discovery, and transformation." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="ZenPath Studios creates calming, practical mental wellness tools, apps, books, videos, and self-help resources."
+  >
+  <title>ZenPath Studios | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <!-- Site Header -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="ZenPath home">
-        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
-        <span class="brand-text">ZenPath</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="apps.html">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body data-page="home" data-base=".">
+  <div data-site-header></div>
 
-  <!-- Hero (Home only) -->
-  <section class="hero">
-    <div class="hero-media">
-      
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="container hero-content">
-      <h1>Mental wellness and personal growth that actually make sense.</h1>
-      <p>ZenPath Studios brings together practical tools, clear guidance, and supportive resources to make mental wellness and personal growth easier to understand and use in real life.</p>
-      <div class="hero-actions">
-        <a class="btn" href="apps.html">Explore Apps</a>
-        <a class="btn btn-secondary" href="books.html">See Books</a>
+  <main id="main-content">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content fade-in-up">
+          <p class="eyebrow">Welcome to ZenPath</p>
+          <h1>Mental wellness and personal growth that actually make sense.</h1>
+          <p class="hero__lead">Tools that work, made by someone who gets it.</p>
+          <p class="hero__support">ZenPath Studios brings together practical tools, clear guidance, and supportive resources to make mental wellness and personal growth easier to understand and use in real life.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#choose-your-path">Start Here</a>
+            <span class="hero__note">Designed by a psychologist.</span>
+          </div>
+        </div>
+        <div class="hero__visual fade-in-up" aria-hidden="true">
+          <div class="hero-card hero-card--main hero-card--image">
+            <img class="hero-image" src="images/homehero.png" alt="">
+          </div>
+          <div class="hero-card hero-card--floating">
+            <span>Real tools for real life</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured Sections -->
-  <main class="site-main">
-   
-
-    <section class="section section-alt">
+    <section id="choose-your-path" class="section">
       <div class="container">
-        <h2>Mindful Apps</h2>
-        <div class="grid cards-3">
-          <article class="card">
-            <img src="./images/mindkit.png" alt="MindKit app" />
-            <div class="card-body">
-              <h3>MindKit</h3>
-              <p>Daily wellness tools, affirmations, and guided practices.</p>
-              <a class="link" href="https://play.google.com/store/search?q=mindkit&c=apps&hl=en_US">Get it on Google Play</a>
+        <div class="section-heading">
+          <p class="eyebrow">Start Here</p>
+          <h2>Explore tools for mental wellness, personal growth, reflection, and daily support.</h2>
+          <p>Pick the kind of support that feels right for you today.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="card product-card">
+            <div class="product-card__icon product-card__icon--sage">
+              <img class="product-logo" src="images/mindkit_icon.png" alt="MindKit logo">
             </div>
+            <h3>MindKit</h3>
+            <p>Whole-person mental wellness tools in one calming space.</p>
+            <a class="button button--secondary" href="apps/mindkit.html">Explore MindKit</a>
           </article>
-          <article class="card">
-            <img src="./images/comingsoon.png" alt="Coming Soon" />
-            <div class="card-body">
-              <h3>Habit Tracker</h3>
-              <p>Simple and fun habbit tracker app.</p>
-              <a class="link" href="apps.html">Coming Soon</a>
+
+          <article class="card product-card">
+            <div class="product-card__icon product-card__icon--blue">
+              <img class="product-logo" src="images/CompassLogo2.png" alt="Compass logo">
             </div>
+            <h3>Compass</h3>
+            <p>Gentle structure for busy complicated everyday lives</p>
+            <a class="button button--secondary" href="apps/compass.html">Explore Compass</a>
           </article>
-          <article class="card">
-            <img src="./images/dbtcomingsoon.png" alt="Coming Soon" />
-            <div class="card-body">
-              <h3>Simple DBT</h3>
-              <p>Simple DBT learning app with flip cards</p>
-              <a class="link" href="apps.html">Coming Soon</a>
+
+          <article class="card product-card">
+            <div class="product-card__icon product-card__icon--lavender">
+              <img class="product-logo" src="images/simpleDBTlogo.png" alt="SimpleDBT logo">
             </div>
+            <h3>SimpleDBT</h3>
+            <p>Practical DBT skills for real-life emotional moments.</p>
+            <a class="button button--secondary" href="apps/simpledbt.html">Explore SimpleDBT</a>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-card__icon product-card__icon--peach">CBT</div>
+            <h3>SimpleCBT</h3>
+            <p>Thought tools for reframing, grounding, and self-awareness.</p>
+            <a class="button button--secondary" href="apps/simplecbt.html">Explore SimpleCBT</a>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-card__icon product-card__icon--mist">YT</div>
+            <h3>YouTube Videos</h3>
+            <p>Bite-sized mental wellness tips, reflections, and guided support.</p>
+            <a class="button button--secondary" href="videos.html">Watch Videos</a>
+          </article>
+
+          <article class="card product-card">
+            <div class="product-card__icon product-card__icon--earth">BW</div>
+            <h3>Books &amp; Workbooks</h3>
+            <p>Digital and printable guides for growth, healing, and self-reflection.</p>
+            <a class="button button--secondary" href="books.html">Browse Books</a>
           </article>
         </div>
       </div>
     </section>
 
-
-     <section class="section">
+    <section class="section section--tinted">
       <div class="container">
-        <h2>Featured Books</h2>
-        <div class="grid cards-3">
-          <article class="card">
-            <img src="images/365daysselflove.png" alt="365 days of self love" />
-            <div class="card-body">
-              <h3>365 Days of Self Love</h3>
-              <p>A Year of Affirmations and Reflections to Nurture Your Heart and Soul</p>
-              <a class="link" href="books.html">View details</a>
-            </div>
-          </article>
-          <article class="card">
-            <img src="./images/comingsoon.png" alt="Coming Soon" />
-            <div class="card-body">
-              <h3>90 Days Feminine Power Transformation</h3>
-              <p>A guided transformation journey to reclaim your inner feminine radiance.</p>
-              <a class="link" href="books.html">View details</a>
-            </div>
-          </article>
-          <article class="card">
-            <img src="./images/comingsoon.png" alt="Coming Soon" />
-            <div class="card-body">
-              <h3>365 Days of Inner Peace</h3>
-              <p>Gentle prompts and practices for calm and clarity.</p>
-              <a class="link" href="books.html">View details</a>
-            </div>
-          </article>
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">A growing toolkit for real life</p>
+            <h2>Explore tools, resources, and support.</h2>
+          </div>
+        </div>
+
+        <div class="reel-shell">
+          <div class="reel" data-auto-reel aria-label="ZenPath product showcase">
+            <article class="showcase-card">
+              <div class="showcase-card__media showcase-card__media--mindkit">
+                <img class="showcase-image" src="images/mindkitwebsiteimage.png" alt="MindKit preview image">
+              </div>
+              <div class="showcase-card__body">
+                <h3>MindKit</h3>
+                <p>A steady home for check-ins, coping tools, and whole-person wellness support. It is designed to feel supportive, not noisy, so users can come back to themselves without friction.</p>
+                <a class="button button--secondary" href="apps/mindkit.html">Explore MindKit</a>
+              </div>
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-card__media showcase-card__media--momentum">
+                <img class="showcase-image" src="images/placeholder.png" alt="Momentum preview image">
+              </div>
+              <div class="showcase-card__body">
+                <h3>Momentum</h3>
+                <p>Built for the days when starting feels harder than it should. Momentum offers gentle structure, visual clarity, and encouragement for routines, plans, and next steps.</p>
+                <a class="button button--secondary" href="apps/momentum.html">Explore Momentum</a>
+              </div>
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-card__media showcase-card__media--simpledbt">
+                <img class="showcase-image" src="images/SimpleDBT/SimpleDBTHero.png" alt="SimpleDBT preview image">
+              </div>
+              <div class="showcase-card__body">
+                <h3>SimpleDBT</h3>
+                <p>DBT skills made usable in ordinary, messy moments. The focus is on learning what helps in the middle of emotion, conflict, stress, and recovery.</p>
+                <a class="button button--secondary" href="apps/simpledbt.html">Explore SimpleDBT</a>
+              </div>
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-card__media showcase-card__media--simplecbt">
+                <img class="showcase-image" src="images/placeholder.png" alt="SimpleCBT preview image">
+              </div>
+              <div class="showcase-card__body">
+                <h3>SimpleCBT</h3>
+                <p>Thought tools, grounded prompts, and clear exercises for noticing patterns and shifting perspective. It aims to be practical enough for everyday use, not textbook-heavy.</p>
+                <a class="button button--secondary" href="apps/simplecbt.html">Explore SimpleCBT</a>
+              </div>
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-card__media showcase-card__media--books">
+                <img class="showcase-image" src="images/365daysselflove.png" alt="365 Days of Self-Love book cover">
+              </div>
+              <div class="showcase-card__body">
+                <h3>Books &amp; Workbooks</h3>
+                <p>Printable and digital companions for reflection, healing, growth, and self-understanding. They are designed to feel warm, approachable, and easy to return to.</p>
+                <a class="button button--secondary" href="books.html">Browse Books</a>
+              </div>
+            </article>
+
+            <article class="showcase-card">
+              <div class="showcase-card__media showcase-card__media--videos">
+                <img class="showcase-image" src="images/placeholder.png" alt="YouTube videos preview image">
+              </div>
+              <div class="showcase-card__body">
+                <h3>YouTube Videos</h3>
+                <p>Short-form encouragement, gentle psychoeducation, and supportive reflections that meet users where they are. A calm place to listen, learn, or regroup.</p>
+                <a class="button button--secondary" href="videos.html">Watch Videos</a>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
-    
+
+    <section class="section">
+      <div class="container">
+        <div class="freebie-callout card">
+          <div>
+            <p class="eyebrow">Start with something free</p>
+            <h2>Download simple worksheets, reflection pages, and tools from ZenPath.</h2>
+            <p>Free resources are a good place to begin if you want an introduction to the kinds of support ZenPath Studios is building.</p>
+          </div>
+          <a class="button button--primary" href="freebies.html">Get Freebies</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
-        <span class="brand-text">ZenPath</span>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="apps.html">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </nav>
-      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Simple current year for footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <div data-site-footer></div>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
