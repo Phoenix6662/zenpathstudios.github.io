@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Apps — ZenPath</title>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Mindful apps that support healing, calm, and daily growth." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore ZenPath Studios apps for practical mental wellness, emotional support, and everyday growth.">
+  <title>ZenPath Studios | Apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="ZenPath home">
-        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
-        <span class="brand-text">ZenPath</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="apps.html" class="active">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body data-page="apps" data-base=".">
+  <div data-site-header></div>
 
-  <section class="page-title">
-    <div class="container">
-      <h1>Mindful Apps</h1>
-      <p>Practical tools to support your daily journey.</p>
-    </div>
-  </section>
+  <main id="main-content">
+    <section class="subhero">
+      <div class="container subhero__content fade-in-up">
+        <p class="eyebrow">ZenPath Apps</p>
+        <h1>Supportive tools for different seasons of healing, growth, and daily life</h1>
+        <p>Each app is built to serve a distinct need, from emotional skills to routines, thought reframing, and steady whole-person support.</p>
+      </div>
+    </section>
 
-  <main class="site-main">
     <section class="section">
-      <div class="container grid cards-3">
-        <article class="card">
-          <img src="./images/mindkit.png" alt="MindKit app" />
-          <div class="card-body">
-            <h3>MindKit</h3>
-            <p>Affirmations, guided practices, and daily check-ins for clarity and calm.</p>
-            <!-- Replace with your real store links -->
-            <div class="btn-row">
-              <a class="btn btn-small" href="https://play.google.com/store/search?q=mindkit&c=apps&hl=en_US">Google Play</a>
+      <div class="container">
+        <div class="app-overview-grid">
+
+          <article class="card overview-card">
+            <div class="overview-card__media overview-card__media--mindkit media-frame media-frame--wide">
+              <img src="images/mindkitwebsiteimage.png" alt="MindKit preview image">
             </div>
-          </div>
-        </article>
 
+            <h2>MindKit</h2>
 
-        <article class="card">
-          <img src="./images/dbtcomingsoon.png" alt="Coming Soon" />
-          <div class="card-body">
-            <h3>Simple DBT</h3>
-            <p>Simple DBT learning app with flip cards</p>
-            <a class="link" href="contact.html">Get updates</a>
-          </div>
-        </article>
+            <p>Whole-person mental wellness tools gathered into one calm, grounding space.</p>
 
-        <article class="card">
-          <img src="./images/comingsoon.png" alt="Coming Soon" />
-          <div class="card-body">
-            <h3>Habit Tracker</h3>
-            <p>Simple and fun habbit tracker app.</p>
-            <div class="btn-row">
-              <a class="btn btn-small" href="#" aria-disabled="true">Google Play</a>
-              <a class="btn btn-small btn-secondary" href="#" aria-disabled="true">App Store</a>
+            <ul class="feature-list feature-list--compact">
+              <li>Daily support and check-in tools</li>
+              <li>Calming practices and emotional regulation resources</li>
+              <li>Designed to reduce overwhelm, not add to it</li>
+            </ul>
+
+            <a class="button button--secondary" href="apps/mindkit.html">View MindKit</a>
+          </article>
+
+          <article class="card overview-card">
+            <div class="overview-card__media overview-card__media--momentum media-frame media-frame--square">
+              <img src="images/compassHero.png" alt="Compass preview image">
             </div>
-          </div>
-        </article>
 
+            <h2>Compass</h2>
 
+            <p>Gentle structure for busy complicated everyday lives.</p>
 
+            <ul class="feature-list feature-list--compact">
+              <li>Organize tasks, goals, projects, and responsibilities across every part of life</li>
+              <li>Stay focused on what matters today without feeling overwhelmed</li>
+              <li>Manage work, home, school, and personal life in one calm, clear system</li>
+            </ul>
+
+            <a class="button button--secondary" href="apps/compass.html">View Compass</a>
+          </article>
+
+          <article class="card overview-card">
+            <div class="overview-card__media overview-card__media--simpledbt media-frame media-frame--square">
+              <img src="images/SimpleDBT/SimpleDBTHero.png" alt="SimpleDBT preview image">
+            </div>
+
+            <h2>SimpleDBT</h2>
+
+            <p>Practical DBT skills for emotional intensity, conflict, urges, and everyday coping moments.</p>
+
+            <ul class="feature-list feature-list--compact">
+              <li>Quick access to usable DBT tools</li>
+              <li>Skills for distress tolerance and emotional regulation</li>
+              <li>Written for real life, not just theory</li>
+            </ul>
+
+            <a class="button button--secondary" href="apps/simpledbt.html">View SimpleDBT</a>
+          </article>
+
+          <article class="card overview-card">
+            <div class="overview-card__media overview-card__media--simplecbt media-frame media-frame--wide">
+              <img src="images/placeholder.png" alt="SimpleCBT preview image">
+            </div>
+
+            <h2>SimpleCBT</h2>
+
+            <p>Thought tools for reframing, grounding, insight, and building self-awareness with compassion.</p>
+
+            <ul class="feature-list feature-list--compact">
+              <li>Reflection prompts and structured thought tools</li>
+              <li>Grounding support for spirals and stuck thinking</li>
+              <li>Clear, practical exercises users can revisit often</li>
+            </ul>
+
+            <a class="button button--secondary" href="apps/simplecbt.html">View SimpleCBT</a>
+          </article>
+
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <img class="brand-logo" src="images/logo.png" alt="ZenPath logo" />
-        <span class="brand-text">ZenPath</span>
-      </div>
-      <nav class="footer-nav" aria-label="Footer">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="books.html">Books</a></li>
-          <li><a href="apps.html" class="active">Apps</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </nav>
-      <p class="copyright">© <span id="year"></span> ZenPath. All rights reserved.</p>
-    </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <div data-site-footer></div>
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
