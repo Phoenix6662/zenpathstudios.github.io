@@ -203,6 +203,17 @@ ul {
   box-shadow: 0 12px 22px rgba(87, 124, 132, 0.14);
 }
 
+.button--danger {
+  background: #9f4c55;
+  color: #fffafa;
+  box-shadow: 0 12px 24px rgba(133, 64, 73, 0.22);
+}
+
+.button--danger:hover,
+.button--danger:focus-visible {
+  box-shadow: 0 14px 26px rgba(133, 64, 73, 0.26);
+}
+
 .card {
   background: var(--surface);
   backdrop-filter: blur(18px);
@@ -1003,6 +1014,173 @@ body[data-page="books"] .resource-card__content {
   border-color: rgba(88, 127, 151, 0.28);
 }
 
+.account-section {
+  padding-top: 3.25rem;
+}
+
+.account-layout {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.account-panel {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.account-heading {
+  margin: 0;
+}
+
+.account-app-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.account-app {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.85rem;
+  width: 100%;
+  min-height: 4.75rem;
+  padding: 0.85rem;
+  border: 1px solid rgba(88, 119, 123, 0.14);
+  border-radius: var(--radius-md);
+  background: rgba(248, 253, 254, 0.72);
+  color: var(--ink);
+  text-align: left;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.account-app:hover,
+.account-app:focus-visible,
+.account-app.is-active {
+  transform: translateY(-2px);
+  border-color: rgba(88, 127, 151, 0.3);
+  background: rgba(251, 254, 255, 0.94);
+  box-shadow: var(--shadow-card);
+}
+
+.account-app__mark {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #f8fdff;
+  font-weight: 800;
+}
+
+.account-app__mark--mindkit {
+  background: linear-gradient(145deg, #7eb59f, #587f97);
+}
+
+.account-app__mark--simpledbt {
+  background: linear-gradient(145deg, #68839b, #9ec8b6);
+}
+
+.account-app__mark--compass {
+  background: linear-gradient(145deg, #577f72, #709bb0);
+}
+
+.account-app strong,
+.account-app small {
+  display: block;
+}
+
+.account-app small {
+  color: var(--ink-soft);
+}
+
+.account-workspace {
+  display: grid;
+  gap: 1.35rem;
+}
+
+.account-card {
+  display: grid;
+  gap: 1.2rem;
+  padding: 1.25rem;
+}
+
+.account-card__header {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.account-status {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  min-height: 2.15rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(158, 200, 182, 0.22);
+  color: var(--sage-deep);
+  font-weight: 800;
+}
+
+.account-note {
+  padding: 1rem 1.1rem;
+  border-radius: 18px;
+  background: rgba(245, 251, 252, 0.86);
+  border-left: 4px solid rgba(88, 119, 123, 0.42);
+}
+
+.account-note--soft {
+  border-left-color: rgba(126, 181, 159, 0.54);
+}
+
+.account-form {
+  gap: 1rem;
+}
+
+.account-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.account-signed-in {
+  display: grid;
+  gap: 1rem;
+}
+
+.confirm-check {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: start;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+.confirm-check input {
+  margin-top: 0.35rem;
+}
+
+.account-message {
+  min-height: 1.65rem;
+  font-weight: 800;
+}
+
+.account-message[data-type="success"] {
+  color: var(--sage-deep);
+}
+
+.account-message[data-type="error"] {
+  color: #9f4c55;
+}
+
+.account-support a {
+  color: var(--blue-deep);
+  font-weight: 800;
+}
+
 .gallery-grid {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   row-gap: 3.4rem;
@@ -1169,6 +1347,20 @@ body[data-page="books"] .resource-card__content {
 
   .contact-layout {
     grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.9fr);
+  }
+
+  .account-layout {
+    grid-template-columns: minmax(15rem, 0.68fr) minmax(0, 1.32fr);
+    align-items: start;
+  }
+
+  .account-card {
+    padding: 1.6rem;
+  }
+
+  .account-card__header {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
   }
 
   .policy {

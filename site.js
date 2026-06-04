@@ -9,14 +9,14 @@ const navLinks = [
   { label: "Videos", href: `${base}/videos.html`, page: "videos" },
   { label: "Freebies", href: `${base}/freebies.html`, page: "freebies" },
   { label: "About", href: `${base}/about.html`, page: "about" },
-  { label: "Login", href: `${base}/app-login.html`, page: "app-login" }
+  { label: "Manage Account", href: `${base}/account.html`, page: "account" }
 ];
 
 const footerLinks = [
   { label: "Privacy Policy", href: `${base}/privacy.html` },
   { label: "Contact", href: `${base}/contact.html` },
   { label: "About", href: `${base}/about.html` },
-  { label: "Login", href: `${base}/app-login.html` },
+  { label: "Manage Account", href: `${base}/account.html` },
   { label: "Apps", href: `${base}/apps.html` },
   { label: "Books", href: `${base}/books.html` },
   { label: "Videos", href: `${base}/videos.html` },

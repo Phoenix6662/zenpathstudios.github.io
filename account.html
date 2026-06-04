@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manage or request deletion for ZenPath Studios app accounts.">
+  <title>ZenPath Studios | Account Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="account" data-base=".">
+  <div data-site-header></div>
+
+  <main id="main-content">
+    <section class="subhero">
+      <div class="container subhero__content fade-in-up">
+        <p class="eyebrow">Account Management</p>
+        <h1>Manage or delete your ZenPath app account</h1>
+        <p>Choose the app connected to your account, sign in with your email and password, or submit a deletion request for support.</p>
+      </div>
+    </section>
+
+    <section class="section account-section">
+      <div class="container account-layout">
+        <aside class="account-panel">
+          <div class="section-heading account-heading">
+            <p class="eyebrow">Choose App</p>
+            <h2>Select the account you want to manage</h2>
+          </div>
+
+          <div class="account-app-list" role="list" aria-label="ZenPath apps">
+            <button class="account-app is-active" type="button" data-app-choice="mindkit" role="listitem">
+              <span class="account-app__mark account-app__mark--mindkit">MK</span>
+              <span>
+                <strong>MindKit</strong>
+                <small>Mental wellness tools</small>
+              </span>
+            </button>
+
+            <button class="account-app" type="button" data-app-choice="simpledbt" role="listitem">
+              <span class="account-app__mark account-app__mark--simpledbt">DBT</span>
+              <span>
+                <strong>SimpleDBT</strong>
+                <small>DBT skills support</small>
+              </span>
+            </button>
+
+            <button class="account-app" type="button" data-app-choice="compass" role="listitem">
+              <span class="account-app__mark account-app__mark--compass">CP</span>
+              <span>
+                <strong>Compass</strong>
+                <small>Life organization and planning</small>
+              </span>
+            </button>
+          </div>
+        </aside>
+
+        <div class="account-workspace">
+          <section class="card account-card" aria-live="polite">
+            <div class="account-card__header">
+              <div>
+                <p class="eyebrow" id="selected-app-label">MindKit</p>
+                <h2>Sign in to manage this account</h2>
+              </div>
+              <span class="account-status" id="auth-state-label">Signed out</span>
+            </div>
+
+            <div class="account-note account-note--soft">
+              <p>Use the same email and password you use in the selected app. Account deletion applies to the selected app only.</p>
+            </div>
+
+            <form class="contact-form account-form" id="login-form">
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" id="login-email" autocomplete="email" placeholder="you@example.com" required>
+              </label>
+
+              <label class="form-field">
+                <span>Password</span>
+                <input type="password" id="login-password" autocomplete="current-password" placeholder="Your password" required>
+              </label>
+
+              <div class="account-actions">
+                <button class="button button--primary" type="submit">Sign In</button>
+                <button class="button button--secondary" type="button" id="reset-password-button">Send Password Reset</button>
+              </div>
+            </form>
+
+            <div class="account-signed-in" id="signed-in-panel" hidden>
+              <div class="account-note">
+                <p>Signed in as <strong id="signed-in-email"></strong>.</p>
+              </div>
+
+              <form class="contact-form account-form" id="delete-form">
+                <label class="form-field">
+                  <span>Confirm password</span>
+                  <input type="password" id="delete-password" autocomplete="current-password" placeholder="Re-enter your password" required>
+                </label>
+
+                <label class="confirm-check">
+                  <input type="checkbox" id="delete-confirm" required>
+                  <span>I understand this will permanently delete my authentication account for the selected app.</span>
+                </label>
+
+                <div class="account-actions">
+                  <button class="button button--danger" type="submit">Delete Account</button>
+                  <button class="button button--secondary" type="button" id="sign-out-button">Sign Out</button>
+                </div>
+              </form>
+            </div>
+
+            <p class="account-message" id="account-message" role="status"></p>
+          </section>
+
+          <section class="card account-card">
+            <div class="account-card__header">
+              <div>
+                <p class="eyebrow">Deletion Request</p>
+                <h2>Request help deleting account data</h2>
+              </div>
+            </div>
+
+            <p>If you cannot sign in, or if you want help deleting related app data, submit this request. Include the email address used in the app.</p>
+
+            <form class="contact-form account-form" action="https://formspree.io/f/mrbyyvoz" method="POST">
+              <input type="hidden" name="_subject" value="ZenPath account deletion request">
+              <input type="hidden" name="selected_app" id="request-selected-app" value="MindKit">
+
+              <label class="form-field">
+                <span>App</span>
+                <select name="app" id="request-app-select">
+                  <option value="MindKit">MindKit</option>
+                  <option value="SimpleDBT">SimpleDBT</option>
+                  <option value="Compass">Compass</option>
+                </select>
+              </label>
+
+              <label class="form-field">
+                <span>Account email</span>
+                <input type="email" name="email" placeholder="you@example.com" required>
+              </label>
+
+              <label class="form-field">
+                <span>Request details</span>
+                <textarea name="message" rows="5" required>Please delete my account and associated data for the selected ZenPath app.</textarea>
+              </label>
+
+              <button class="button button--primary" type="submit">Submit Deletion Request</button>
+            </form>
+
+            <p class="account-support">You can also email <a href="mailto:zenpathstudios@gmail.com">zenpathstudios@gmail.com</a>.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+  <script src="site.js"></script>
+  <script type="module" src="account.js"></script>
+</body>
+</html>
